@@ -2,6 +2,7 @@
   "name": "netflixclone",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://whoknowsi.github.io/netflixclone",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
