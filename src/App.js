@@ -4,6 +4,7 @@ import { getList, getBillboardInfo } from './Tmdb';
 import Row from './Row/Row';
 import Header from './Header/Header';
 import Billboard from './Billboard/Billboard';
+import Footer from './Footer/Footer'
 
 const App = () => {
 
@@ -56,6 +57,7 @@ const App = () => {
             <Row key={key} title={item.title} items={item.items} />
           ))}
         </section>
+        <Footer />
         
       </div>
     );

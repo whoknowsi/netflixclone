@@ -15,8 +15,28 @@ const getList = async () => {
             items: await fetchList('/discover/tv?with_network=213')
         }, 
         {
+            title: "Tendencias",
+            items: await fetchList('/trending/all/week?')
+        },
+        {
+            title: "Top rated",
+            items: await fetchList('/movie/top_rated?')
+        },
+        {
+            title: "Acción",
+            items: await fetchList('/discover/movie?with_genres=28')
+        },
+        {
             title: "Terror",
             items: await fetchList('/discover/movie?with_genres=27')
+        },
+        {
+            title: "Comedia",
+            items: await fetchList('/discover/movie?with_genres=35')
+        },
+        {
+            title: "Romance",
+            items: await fetchList('/discover/movie?with_genres=10749')
         }
     ]
 }
