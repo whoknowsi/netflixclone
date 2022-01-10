@@ -1,0 +1,98 @@
+.billboard {
+    height: 100vh;
+}
+.billboardHorizontal, .billboardVertical{
+    width: inherit;
+    height: inherit;
+}
+.billboardHorizontal {
+    background: linear-gradient(to top, #141414 10%, transparent 90%);
+    
+}
+.billboardVertical {
+    background: linear-gradient(to right, #141414 30%, transparent 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2em;
+    padding-bottom: 2em;
+}
+.billboardTitle {
+    font-size: 2.8vw;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.billboardOverview {
+    font-size: 1.4vw;
+    margin-top: 15px;
+    color: #999;
+    max-width: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+.billboardRate, .billboardYear, .billboardSeasons {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: inherit;
+}
+.billboardRate {
+    color: #46d369;
+}
+.billboardButtons {
+    display: flex;
+    margin-top: 15px;
+    overflow-x: hidden;
+}
+.billboardButtonInfo, .billboardButtonPlay {
+    display: flex;
+    font-size: inherit;
+    font-weight: bold;
+    padding: 0.8rem 2.4rem 0.8rem 2rem;
+    margin-right: 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    border-style: none;
+}
+.billboardButtonInfo {
+    color: #fff;
+    background-color: rgba(109,109,110,0.7);
+}
+.billboardButtonInfo:hover {
+    background-color: rgba(109,109,110,0.4);
+}
+.billboardButtonPlay:hover {
+    background-color: rgba(255,255,255,0.75);
+}
+.billboardButtonInfo div, .billboardButtonInfo span,
+.billboardButtonPlay div, .billboardButtonPlay span {
+    display: inline-block;
+}
+.billboardButtonInfo div,
+.billboardButtonPlay div {
+    margin-right: 0.5rem;
+}
+.billboardGenres {
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    .billboardTitle {
+        font-size: 16px;
+    }
+    .billboardOverview {
+        font-size: 12px;
+        max-width: 100%;
+    }
+    .billboardButtonInfo, .billboardButtonPlay {
+        padding: 0.2rem 1rem;
+    }
+    .billboardVertical {
+        margin-top: -6em;
+    }
+}
