@@ -2,7 +2,7 @@ name: Netflix Clone
 on:
   push: 
     branches:
-      - main
+      - master
 jobs:
   deploy:
     name: deploy app
