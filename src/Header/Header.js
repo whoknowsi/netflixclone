@@ -42,7 +42,7 @@ const Header = ({ showHeader }) => {
                         </ul>
                     </div>
                 }
-                <a href="/"><img class="logo" alt="Netflix Clone" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/799px-Netflix_2015_logo.svg.png" /></a>
+                <a href="/netflixclone"><img class="logo" alt="Netflix Clone" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/799px-Netflix_2015_logo.svg.png" /></a>
                 <ul>
                     <li className='navigationItem'>Inicio</li>
                     <li className='navigationItem'>Series</li>
