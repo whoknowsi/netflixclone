@@ -17,7 +17,11 @@ header {
     align-content: center;
     align-items:center;
 }
-.headerLeft img {
+.headerLeft a {
+    height: 100%;
+}
+.logo {
+    cursor: pointer;
     height: 100%;
     margin-left: 30px;
 }
@@ -40,6 +44,7 @@ header {
 .navigationMenu {
     display: none;
     cursor: pointer;
+    margin-left: 30px;
 }
 .navigationItem {
     cursor: pointer;
@@ -52,16 +57,19 @@ header {
 .showHeader {
     background-color: rgb(20, 20, 20);
 }
-
+.headerMenuOpen {
+    background-color: #000;
+}
 .navigatonSubMenu {
     display: none;
+    transition: all 0.5s linear;
     position: absolute;
-    background-color:  rgba(0, 0, 0, .9);
-    min-width: 160px;
+    background-color:  rgba(0, 0, 0, 1);
+    width: 15em;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 5;
-    margin-top: 1em;
-    margin-left: -3em;
+    top: 41px;
+    left: -13em;
 }
 .navigatonSubMenu ul {
     padding: 0;
@@ -82,6 +90,11 @@ header {
 @media screen and (max-width: 800px) {
     header {
         height: 41px;
+        background-color: rgba(10,10,10,60%);
+        transition: all ease 0s;
+    }
+    .showHeader {
+        background-color: rgba(10,10,10,60%);
     }
     .navigationMenu {
         list-style-type: none;
@@ -93,6 +106,6 @@ header {
     }
     .navigatonSubMenu {
         display: block;
-        opacity: 0;
     }
+
 }

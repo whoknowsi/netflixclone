@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './Header.css'
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import MenuIcon from '@mui/icons-material/Menu';
+
 
 const Header = ({ showHeader }) => {
 
@@ -11,25 +13,25 @@ const Header = ({ showHeader }) => {
         if (isOpen) setIsOpen(false);
         else setIsOpen(true);
     }
-    
+
     return (
-        <header className={showHeader ? 'showHeader' : ''}>
+        <header className={isOpen ? 'headerMenuOpen' : showHeader ? 'showHeader' : ''}>
             <div className="headerLeft">
-                <img alt="Netflix Clone" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/799px-Netflix_2015_logo.svg.png" href='/' />
-                <ul>
-                    <li className='navigationMenu' onClick={handleExplorerClick}>Explorar</li>
-                    {isOpen ?
-                        <div className="navigatonSubMenu" style={{ opacity: 1, transitionDuration: "200ms"}}>
-                            <ul>
-                                <li className='navigatonSubMenuItem'>Explorar</li>
-                                <li className='navigatonSubMenuItem'>Inicio</li>
-                                <li className='navigatonSubMenuItem'>Series</li>
-                                <li className='navigatonSubMenuItem'>Películas</li>
-                                <li className='navigatonSubMenuItem'>Novedades populares</li>
-                                <li className='navigatonSubMenuItem'>Mi lista</li>
-                            </ul>
-                        </div> :
-                        <div className="navigatonSubMenu" style={{ opacity: 0, transitionDuration: "50ms", visibility: "hidden" }}>
+                <li className='navigationMenu' onClick={handleExplorerClick}>
+                    <MenuIcon />
+                </li>
+                {isOpen ?
+                    <div className="navigatonSubMenu" style={{ left: 0, transitionDuration: "100ms" }}>
+                        <ul>
+                            <li className='navigatonSubMenuItem'>Explorar</li>
+                            <li className='navigatonSubMenuItem'>Inicio</li>
+                            <li className='navigatonSubMenuItem'>Series</li>
+                            <li className='navigatonSubMenuItem'>Películas</li>
+                            <li className='navigatonSubMenuItem'>Novedades populares</li>
+                            <li className='navigatonSubMenuItem'>Mi lista</li>
+                        </ul>
+                    </div> :
+                    <div className="navigatonSubMenu" style={{ left: '-15em', transitionDuration: "100ms", visibility: "hidden" }}>
                         <ul>
                             <li className='navigatonSubMenuItem'>Explorar</li>
                             <li className='navigatonSubMenuItem'>Inicio</li>
@@ -39,7 +41,9 @@ const Header = ({ showHeader }) => {
                             <li className='navigatonSubMenuItem'>Mi lista</li>
                         </ul>
                     </div>
-                    }
+                }
+                <a href="/"><img class="logo" alt="Netflix Clone" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/799px-Netflix_2015_logo.svg.png" /></a>
+                <ul>
                     <li className='navigationItem'>Inicio</li>
                     <li className='navigationItem'>Series</li>
                     <li className='navigationItem'>Películas</li>

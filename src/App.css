@@ -42,4 +42,7 @@ body {
     body {
         font-size: 12px;
     }
+    .mainRows {
+        margin-top: 4.5em;
+    }
 }
