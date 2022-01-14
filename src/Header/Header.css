@@ -107,5 +107,8 @@ header {
     .navigatonSubMenu {
         display: block;
     }
+    .headerRight {
+        margin-right: 1em;
+    }
 
 }

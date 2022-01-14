@@ -72,6 +72,7 @@
         font-size: 1.2em;
         font-weight: 700;
         color: #999;
+        margin-left: 1.4em;
     }
     .movieRowArrowLeft, .movieRowArrowRight {
         opacity: 1;
@@ -79,6 +80,10 @@
     }
     .movieRowArrowLeft:hover .arrowLeft, .movieRowArrowRight:hover .arrowRight {
         transform: scale(1);
+    }
+    .movieRowListArea {
+        overflow-x: hidden;
+        padding-left: 1em
     }
 
 }
