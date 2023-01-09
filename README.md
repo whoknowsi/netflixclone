@@ -1,50 +1,50 @@
 # Netflix Clone
 
-## Índice
+## Index
 
-- [Descripción](#descripción)
-- [Capturas de pantalla](#capturas-de-pantalla)
-- [Instalación](#instalación)
-- [Licencia](#licencia)
-- [Agradecimientos](#agradecimientos)
+- [Description](#description)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-## Descripción
+## Description
 
-[Ver la página en vivo](https://whoknowsi.github.io/netflixclone/)
+[View live page](https://whoknowsi.github.io/netflixclone/)
 
-Netflix clone es una aplicación web responsive hecha en React, que permite a los usuarios ver imágenes de películas y series de televisión. Utiliza la API de TMDB para obtener información y imágenes de las películas y series.
+Netflix clone is a responsive web application made in React, which allows users to view images of movies and TV shows. It uses the TMDB API to get information and images of the movies and shows.
 
-## Capturas de pantalla
+## Screenshots
 
-A continuación se muestran algunas capturas de pantalla de tu página de Netflix clonada tanto en una pantalla de escritorio como en un dispositivo móvil:
+Here are some screenshots of your cloned Netflix page on both a desktop screen and a mobile device:
 
 ### Desktop
 
-![Captura de pantalla de la página de Netflix clonada en una pantalla de escritorio](/screenshots/desktop.png)
+![Desktop screenshot](/screenshots/desktop.png)
 
 ### Mobile
 
-![Captura de pantalla de la página de Netflix clonada en un dispositivo móvil](/screenshots/mobile.png)
+![Mobile screenshot](/screenshots/mobile.png)
 
-## Instalación
+## Installation
 
-Para instalar y utilizar tu página de Netflix clonada, sigue estos pasos:
+To install and use your cloned Netflix page, follow these steps:
 
-1. Clona este repositorio en tu máquina local
-2. Instala las dependencias necesarias ejecutando el siguiente comando en la consola:
+1. Clone this repository to your local machine
+2. Install necessary dependencies by running the following command in the console:
 
 `npm install`
 
-3. Inicia la aplicación ejecutando el siguiente comando:
+3. Start the application by running the following command:
 
 `npm start`
 
-4. Abre tu navegador web y dirígete a http://localhost:3000 para ver la aplicación en funcionamiento.
+4. Open your web browser and go to http://localhost:3000 to see the application in action.
 
-## Licencia
+## License
 
-Este proyecto está licenciado bajo la Licencia MIT. Para ver el texto completo de la licencia, consulta el archivo [LICENSE](LICENSE.md) adjunto.
+This project is licensed under the MIT License. To view the full text of the license, see the attached [LICENSE](LICENSE.md) file.
 
-## Agradecimientos
+## Acknowledgements
 
-Agradezco a la API de TMDB por proporcionar la información y las imágenes de las películas y series utilizadas en esta aplicación.
+I would like to thank the TMDB API for providing the information and images of the movies and shows used in this application.
